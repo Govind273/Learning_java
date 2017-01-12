@@ -1,0 +1,19 @@
+package patterns;
+
+import java.util.Scanner;
+
+public class right_angled_triangle {
+
+	public static void main(String[] args) {
+		
+		
+	System.out.println("Enter the length of triangle : ");	
+	Scanner sc = new Scanner(System.in);
+	int length = sc.nextInt();
+	
+	
+	System.out.println("#");
+	
+	
+	}
+}

@@ -1,0 +1,25 @@
+package package1;
+
+
+
+public class Class1 {
+
+	public static void main(String[] args) {
+		
+	int i = 12;
+	int j=0;
+	int k = 0;
+	
+	try{
+	 j = i/k;
+	}
+	catch(ArithmeticException e){
+		System.out.println(e);
+
+	}
+	System.out.println(j);
+	
+
+}
+
+}

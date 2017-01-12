@@ -1,0 +1,28 @@
+package package1;
+import java.io.*;
+
+public class Class2 {
+
+	public static void main(String[] args) {
+		Hello rohit = new Hello(12,"Rohit");
+		
+		
+		System.out.println(rohit.age);
+	
+
+}
+	
+	class Hello{
+		int age;
+		String name;
+		
+		Hello(){
+			
+		}
+		
+		Hello(int age, String name){
+			this.age = age;
+			this.name = name;
+		}
+	}
+}

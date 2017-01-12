@@ -1,0 +1,33 @@
+package package1;
+import java.io.*;
+
+public class Class2 {
+
+	public static void main(String[] args) {
+		//Hello rohit = new Hello(23,"Rohit Mishra");
+		Hello rahul = new Hello(13,"Rahul Mishra ");
+
+		
+		Hello.cryBaby();
+	}
+
+}
+	
+	class Hello{ 
+		 static int age=98;
+		 static String name;
+		
+		Hello(){
+			
+		}
+		
+		Hello(int age, String name){
+			this.age = age;
+			this.name = name;
+		}
+		
+		static void cryBaby(){
+			System.out.println("My name is "+ name +"age is "+ age);
+		}
+	
+}

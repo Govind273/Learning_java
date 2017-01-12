@@ -1,0 +1,22 @@
+package package1;
+
+public class Class2 {
+
+	public static void main(String[] args) {
+		String a = new String("Rohit");
+		String b = new String("Rohit");
+		
+		Integer  aa = new Integer(29);
+		int  bb= new Integer(29);
+		
+        if(aa == bb ){
+        	System.out.println("Oh i am worng");
+        }
+        
+        else{
+        	System.out.println("Oh i am right");
+
+        }
+	}
+
+}

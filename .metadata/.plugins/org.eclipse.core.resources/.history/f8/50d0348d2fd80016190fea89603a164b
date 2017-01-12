@@ -1,0 +1,37 @@
+package package1;
+
+public class Kurushetra {
+
+	
+	static int s = 23;
+	public static void main(String[] args) {
+    
+		System.out.println(s);
+		 
+		name me = new name();
+		
+        name.syHell();
+        
+	}
+	
+	
+	
+	
+
+}
+
+ class name{
+		private static void syHel(){
+			System.out.println("Hello Meri Jaan");
+		}
+		
+		public static void syHell(){
+			syHel();
+			System.out.println("Hello Meri Jaan");
+		}
+		
+	     void syHello(){
+			System.out.println("Hello Meri Jaan");
+		}
+
+ }
