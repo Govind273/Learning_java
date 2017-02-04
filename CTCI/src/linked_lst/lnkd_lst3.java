@@ -5,6 +5,8 @@ public class lnkd_lst3 {
    ListNode head ;
    int size=0;
 
+//THE METHOD WILL ADD A NODE AT THE FRONT OF THE LINKEDLIST
+ 
 public void addFront(int data){
 	if(head==null){
 		head = new ListNode(data,null);
