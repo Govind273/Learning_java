@@ -30,7 +30,7 @@ public class right_angled_triangle {
 	
 
 	for(int j=1; j<=length; j++){
-		
+	
 	for(int i=length; i>=j ; i--){
 	System.out.print("#");
 	}

@@ -1,0 +1,32 @@
+package Tree;
+
+public class Tree_impl {
+
+	public static void main(String[] args) {
+		Treeimpl tree1 = new Treeimpl();
+		Treeimpl tree2 = new Treeimpl();
+
+		System.out.println(tree1.isNull());
+		
+		tree1.insert(20);
+		tree1.insert(25);
+		tree1.insert(10);
+		tree1.insert(7);
+		tree1.insert(23);
+		tree1.insert(28);
+		tree1.insert(24);
+		tree1.insert(21);
+		
+		
+		tree1.display(tree1.root);
+		
+	   tree1.deletenode(23);
+	   System.out.println(" ");
+		tree1.display(tree1.root);
+
+	}
+
+
+	
+}
+

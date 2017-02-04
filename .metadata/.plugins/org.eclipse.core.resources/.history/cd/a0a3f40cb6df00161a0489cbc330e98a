@@ -1,0 +1,117 @@
+package Linkd_List;
+
+public class Singly_Lnkd_List {
+        
+     static ListNode head ;
+     int size=0;
+  
+     public void addRear(int data){
+    	 //when list is empty
+    	 
+    	 if(head==null){
+    		 head= new ListNode(data,null);
+    		 size++;
+    	 }      
+    	 //When list is not empty
+    	 
+    	ListNode current = head;
+    	 while(current.Next != null){
+    		 current = current.Next;
+    		 
+    	 }
+     	ListNode newlink = new ListNode(data,null);
+
+    	 current.Next = newlink;
+    	 current = newlink;
+    	 size++;
+     }
+     
+     
+     
+   
+     
+     public void addAt(int data, int index){
+    	 if (index <1||index >size) return ;
+    	 if (head == null) return ;
+    	 if (index ==1) {
+    		 ListNode newlink = new ListNode(data,head);
+    		 head = newlink;
+    		 
+    	 }
+    	 ListNode current = head;
+    	  while(index >1 ){
+    		  current.Next = current; 
+    		 }
+    	  
+    	   if (current.Next == null){
+    		   ListNode newlink = new ListNode(data,null);
+    		   current.Next = newlink ;
+    		   current = newlink;
+    		   	  
+    	  }
+    	  else{
+    		  ListNode newlink = new ListNode(data,current.Next);
+    		  current.Next = newlink;
+    		  current = newlink;
+    	  }
+    	 
+    	 size++;
+    }
+
+    	 
+     
+     
+     public static void printList(){
+	   ListNode current = head;
+	   while(current.Next != null){
+		   System.out.println(current.data);
+		   current = current.Next;
+	   }
+   }
+   
+   
+   
+
+	public static void main(String[] args) {
+	
+		Singly_Lnkd_List a = new Singly_Lnkd_List();
+		a.addRear(12);
+		a.addRear(14);
+		a.addAt(2,18);
+		
+		
+		printList();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ListNode{
+	
+	int data;
+    ListNode Next;
+
+    public ListNode(int data){
+    	this.data= data;
+    }
+    public ListNode(int data, ListNode next){
+    	this.data=data;
+    	this.Next=next;
+    }
+    public ListNode(){
+    	
+    }
+    
+}
+

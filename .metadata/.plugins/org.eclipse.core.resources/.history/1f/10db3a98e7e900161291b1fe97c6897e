@@ -1,0 +1,24 @@
+package Linkd_List;
+
+public class Reverselst {
+	
+	
+
+
+	public static void main(String[] args) {
+
+		LIST  a = new LIST();
+		a.addFront(13);
+	    a.addFront(14);
+	    a.addFront(16);
+	    a.addFront(20);
+	    a.addFront(25);
+	  
+     System.out.println(a.KthFromLast(a.head, 5));
+	
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,65 @@
+package Tree;
+
+public class Treeimpl {
+	Node root;
+
+	public Treeimpl()
+	{
+		root=null;
+	}
+	
+	public boolean isNull(){
+		return(root == null);
+	}
+	public void insert(int val){
+		Node nwnode = new Node(val);
+		
+		if(root==null){
+			root = nwnode;
+		}
+		else{
+			if(val<root.data){
+			    if(root.left==null)
+			    {
+			    	root.left=nwnode;
+			    }
+			}else
+			{
+				if(root.right== null){
+					root.right= nwnode;
+				}
+			}
+		}
+	}
+      
+
+
+
+	
+	
+	
+}
+
+
+
+
+
+
+
+//Node Structure for the Tree 
+class Node{
+	Node left ;
+    Node right;
+     int data;
+     
+ 
+     Node(int data)
+     {
+    	 this.data = data;
+     }
+     Node(){
+    	 
+     }
+     
+     
+}

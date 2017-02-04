@@ -1,0 +1,23 @@
+package Tree;
+
+public class Tree_impl {
+
+	public static void main(String[] args) {
+		Treeimpl tree1 = new Treeimpl();
+		System.out.println(tree1.isNull());
+		
+		tree1.insert(12);
+		tree1.insert(7);
+		tree1.insert(13);
+		tree1.insert(31);
+		
+		
+		
+		
+	   
+	}
+
+
+	
+}
+

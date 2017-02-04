@@ -1,0 +1,76 @@
+package Linkd_List;
+
+public class Singly_Lnkd_List {
+        
+     static ListNode head ;
+     int size=0;
+  
+     public void add(int data){
+    	 //when list is empty
+    	 
+    	 if(head==null){
+    		 head= new ListNode(data,null);
+    		 size++;
+    	 }      
+    	 //When list is not empty
+    	 
+    	ListNode newlink = new ListNode(data,null);
+    	ListNode current = head;
+    	 while(current.Next!= null){
+    		 current = current.Next;
+    		 
+    	 }
+    	 current.Next = newlink;
+    	 current = newlink;
+     }
+   public static void printList(){
+	   ListNode current = head;
+	   while(current!= null){
+		   current = current.Next;
+
+		   System.out.println(current.data);
+	   }
+   }
+
+	public static void main(String[] args) {
+	
+		Singly_Lnkd_List a = new Singly_Lnkd_List();
+		a.add(12);
+		a.add(14);
+		
+		
+		printList();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ListNode{
+	
+	int data;
+    ListNode Next;
+
+    public ListNode(int data){
+    	this.data= data;
+    }
+    public ListNode(int data, ListNode next){
+    	this.data=data;
+    	this.Next=next;
+    }
+    public ListNode(){
+    	
+    }
+    
+}
+

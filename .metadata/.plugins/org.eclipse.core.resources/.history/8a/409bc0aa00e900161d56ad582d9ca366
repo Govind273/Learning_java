@@ -1,0 +1,28 @@
+package Linkd_List;
+
+public class Reverselst {
+	
+	
+
+
+	public static void main(String[] args) {
+
+		LIST  a = new LIST();
+		a.addFront(13);
+	    a.addFront(14);
+	    a.addFront(14);
+        a.addFront(13);
+        a.addFront(13);
+        a.addFront(15);
+        
+        a.printList();
+        System.out.println("   hellloooo     ");
+        a.removeduplicates(a.head);
+        a.printList();
+	
+	}
+	
+	
+	
+
+}

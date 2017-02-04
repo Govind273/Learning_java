@@ -1,0 +1,12 @@
+package Tree;
+
+public class Tree_impl {
+
+	public static void main(String[] args) {
+		Treeimpl tree1 = new Treeimpl();
+		System.out.println(tree1.isNull());
+		
+	   
+	}
+
+}

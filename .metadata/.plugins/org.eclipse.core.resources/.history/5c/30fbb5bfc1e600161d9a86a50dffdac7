@@ -1,0 +1,70 @@
+package Linkd_List;
+
+public class Reverselst {
+	
+	
+
+
+	public static void main(String[] args) {
+
+		LIST  a = new LIST();
+		a.addFront(13);
+		a.addFront(20);
+		a.addFront(115);
+		a.addFront(2);
+		a.addFront(3);
+		a.addFront(11);
+		
+		
+		a.removeDuplicates(a);
+		
+/*		LIST  b = new LIST();
+		b.addFront(13);
+        b.addFront(20);
+		b.addFront(115);
+		b.addFront(2);
+		b.addFront(3);
+		b.addFront(11);
+		System.out.println("Before aDD");
+		b.printList();
+		System.out.println("aFTER ADD");
+		b.addAt(23, 1);
+		
+		System.out.println("aFTER*************** ADD");
+		b.addAt(25, 2);
+		
+	//a.printList();
+	System.out.println();
+  
+	b.printList();
+	System.out.println();
+	
+	
+	/*	
+	a.printList();
+	System.out.println();
+	
+	
+	int x = a.search(13);
+    System.out.println(x);
+	System.out.println(a.deleteNodeatIndex(a,20));
+   a.printList1(a.head);
+	
+	//ListNode aa = 	a.reverselist();
+	 //a.printList1(aa);
+	*/
+	
+	//a.seperatearound(a, 14);
+	 
+  //System.out.println( a.ispallindrome(a));
+	//b.intrsction(a,b);
+
+	
+	
+	
+	}
+	
+	
+	
+
+}

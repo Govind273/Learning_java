@@ -1,0 +1,14 @@
+package Tree;
+
+public class Tree_impl {
+
+	public static void main(String[] args) {
+		Treeimpl tree1 = new Treeimpl();
+		System.out.println(tree1.isNull());
+		
+		tree1.root.data = 12;
+		tree1.root.left.data= 18;
+		System.out.println(tree1.root.data +"wedq"+ tree1.root.left.data);
+	}
+
+}
