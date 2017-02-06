@@ -1,0 +1,10 @@
+package easy1;
+
+public class IsaTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
