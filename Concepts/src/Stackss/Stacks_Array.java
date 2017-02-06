@@ -15,17 +15,17 @@ public class Stacks_Array {
       public void push( int data){
 		
 			
-      Top++;
+            Top++;
 		    size[Top] = data;
 		}
       public boolean isEmpty(){
-    	  if(Top == -1) return true;
-    	  else return false;
+    	// return (size.length == 0); this will not work even if the size is 10 and lsit is empty;
+    	  return (Top == -1);
       }
 
       public boolean isFull(){
-    	  if (Top == size.length-1) return true;
-    	  else return false;
+    	  return (Top == size.length-1) ;
+    	  
       }
       public void pop(){
     	  if(!isEmpty()){

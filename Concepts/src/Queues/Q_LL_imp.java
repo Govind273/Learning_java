@@ -29,10 +29,11 @@ public class Q_LL_imp {
 		q.peekRear();
 
 		System.out.println(" ssd   sdsd       sadfd              sds                      ssfccccc wd          dsfffffff");
-		q.dequeue();
-		q.dequeue();
 		
-		q.peekFront();
+	
+		
+
+		q.printval(q.front);
 		
 		
 	}

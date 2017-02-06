@@ -28,7 +28,7 @@ public class Q_Lnkdlst {
        }
        
        public boolean isEmpty(){
-    	   return(front == null && rear == null);
+    	   return(front == null);
        }
 
       public void enqueue(int data){
@@ -47,11 +47,15 @@ public class Q_Lnkdlst {
     //The deque is not working the first time ..may be the reason is that it is moving from null to first.
       public void dequeue(){
     	
-    	 if(!isEmpty()){
-    		 
-    		 front = front.next;
-    		
-    	 }
+    	if(isEmpty())
+    	{
+    		return ;
+    	}
+    	
+    	System.out.println("Element at Front:"+front.data);	 
+        front = front.next;
+    	System.out.println("Element at Front:"+front.data);	 
+    
 		
      }
      public void peekFront(){
@@ -59,6 +63,14 @@ public class Q_Lnkdlst {
     	    	System.out.println("Front value is " +front.data);
     	    }
     	
+     }
+     public void printval(Node front)
+     {
+    	 while(front!=null)
+    	 {
+    		 System.out.println(front.data);
+    		 front = front.next;;
+    	 }
      }
      public void peekRear(){
     	 if(!isEmpty()){

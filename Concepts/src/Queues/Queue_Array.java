@@ -41,10 +41,18 @@ public class Queue_Array {
 		 return(rear == arr.length-1);
 	 }
 	 
-	 public void peek(){
+	 public void peekFront(){
 		 if(!isEmpty()) 
 	
 		 System.out.println(arr[front]);
 	 
 	}
+	 public int peekRear()
+	 {
+		 if(!isEmpty())
+		 {
+			 return arr[rear];
+		 }
+	  return -1;
+	 }
 }
